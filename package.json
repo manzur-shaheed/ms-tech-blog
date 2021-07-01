@@ -1,0 +1,19 @@
+{
+  "name": "ms-tech-blog",
+  "version": "1.0.0",
+  "description": "A CMS-style tech blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manzur-shaheed/ms-tech-blog.git"
+  },
+  "author": "Manzur Shaheed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manzur-shaheed/ms-tech-blog/issues"
+  },
+  "homepage": "https://github.com/manzur-shaheed/ms-tech-blog#readme"
+}
