@@ -2,11 +2,12 @@
 <div class="col">
   <div class="card m-2">
     <div class="card-header  d-flex justify-content-between bg-light">
-      <div class="fw-bold">{{title}}</div>      
+      <div class="fs-4 fw-bold">{{title}}</div>      
       <div class="fw-bold">By: {{user.username}} on {{format_date date_created}}</div>
     </div>
     <div class="card-body">
       <div><b>Content:</b> {{content}}<p></div>
+      <div class="fs-5 fw-bold">Comments:<p></div>
       {{#each comments}}  
         <div class="fw-bold">{{user.username}}, {{format_date date_created}}</div>
         <div>{{comment}}<p></div>              

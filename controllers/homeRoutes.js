@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
 });
 
 // single post 
-router.get('/posts/:id', async(req, res) => {
+router.get('/posts/:id', withAuth, async(req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
@@ -39,7 +39,7 @@ router.get('/posts/:id', async(req, res) => {
     // serialize the data
     const post = postData.get({ plain: true });
 
-    console.log(post);
+    // console.log(post);
     // res.status(200).json(postData);
     res.render('create-comment', { 
       layout: 'homepage', 
