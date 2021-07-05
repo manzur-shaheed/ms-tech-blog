@@ -43,11 +43,11 @@ router.get('/edit/:id', withAuth, async(req, res) => {
     const postData = await Post.findByPk(req.params.id, {
       include: [{ model: User, attributes: ['username'] }]
     });
-    console.log(postData);
+    // console.log(postData);
 
     // serialize the data
     const post = postData.get({ plain: true });
-    console.log(post);
+    // console.log(post);
 
     // res.status(200).json(postData);
     res.render('edit-post', { 

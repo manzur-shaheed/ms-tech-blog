@@ -17,6 +17,7 @@ const loginHandler = async (event) => {
 
     // redirect to dashboard if sign up is successful
     if (response.ok) {
+      session['username'] = username;
       document.location.replace('/dashboard');
     } else {
       alert(response.statusText);
