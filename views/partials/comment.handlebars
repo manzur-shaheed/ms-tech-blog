@@ -3,6 +3,7 @@
   <div class="card m-2">
     <div class="card-header  d-flex justify-content-between bg-light">
       <div class="fw-bold">{{title}}</div>      
+      <div class="fw-bold">By: {{user.username}} on {{format_date date_created}}</div>
     </div>
     <div class="card-body">
       {{#each comments}}  
