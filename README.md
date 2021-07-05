@@ -10,7 +10,7 @@ Code: [Code](https://github.com/manzur-shaheed/ms-tech-blog)
 You can clone code from [github link](https://github.com/manzur-shaheed/ms-tech-blog) and run it locally on your computer. 
 
 #### Deployed
-This application is deployed at [link] on heroku.
+This application is deployed at [link](https://manzur-tech-blog.herokuapp.com/) on heroku.
 #### Prerequisites 
 A computer with ```mysql``` database installed locally, ```node.js``` and ```npm``` (node package manager). It uses following ```node.js``` packages -
 - bcrypt

@@ -7,7 +7,6 @@ const loginHandler = async (event) => {
   const password = document.querySelector('#login-password').value.trim();
   // console.log(username, password);
   
-  console.log(username, password);
   if (username && password) {
     const response = await fetch('/api/users/login', {
       method: 'POST',
@@ -17,7 +16,6 @@ const loginHandler = async (event) => {
 
     // redirect to dashboard if sign up is successful
     if (response.ok) {
-      session['username'] = username;
       document.location.replace('/dashboard');
     } else {
       alert(response.statusText);
