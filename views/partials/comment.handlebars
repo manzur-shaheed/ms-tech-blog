@@ -6,6 +6,7 @@
       <div class="fw-bold">By: {{user.username}} on {{format_date date_created}}</div>
     </div>
     <div class="card-body">
+      <div><b>Content:</b> {{content}}<p></div>
       {{#each comments}}  
         <div class="fw-bold">{{user.username}}, {{format_date date_created}}</div>
         <div>{{comment}}<p></div>              
