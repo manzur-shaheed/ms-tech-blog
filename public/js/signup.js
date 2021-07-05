@@ -1,15 +1,14 @@
-// script to login (following example in mini-project)
+// script to signup
 const loginHandler = async (event) => {
   event.preventDefault();
 
   // collect inputs
-  const username = document.querySelector('#login-username').value.trim();
-  const password = document.querySelector('#login-password').value.trim();
+  const username = document.querySelector('#signup-username').value.trim();
+  const password = document.querySelector('#signup-password').value.trim();
   // console.log(username, password);
   
-  console.log(username, password);
   if (username && password) {
-    const response = await fetch('/api/users/login', {
+    const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
@@ -25,4 +24,4 @@ const loginHandler = async (event) => {
 };
 
 // browser event handler
-document.querySelector('.login-form').addEventListener('submit', loginHandler);
+document.querySelector('.signup-form').addEventListener('submit', loginHandler);

@@ -1,0 +1,11 @@
+<!-- homepage showing all posts-->
+{{#each posts}}
+<div class="col">
+  <div class="card m-2">
+    <div class="card-header d-flex justify-content-between bg-light">
+      <span><a href="/posts/{{id}}">{{title}}</a></span>
+      <span>{{format_date date_created}}</span>
+    </div>
+  </div>
+</div>
+{{/each}}

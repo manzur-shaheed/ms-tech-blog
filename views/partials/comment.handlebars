@@ -1,0 +1,14 @@
+<!-- view comment -->
+<div class="col">
+  <div class="card m-2">
+    <div class="card-header  d-flex justify-content-between bg-light">
+      <div class="fw-bold">{{title}}</div>      
+    </div>
+    <div class="card-body">
+      {{#each comments}}  
+        <div class="fw-bold">{{user.username}}, {{format_date date_created}}</div>
+        <div>{{comment}}<p></div>              
+      {{/each}}
+    </div>
+  </div>
+</div>
